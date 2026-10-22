@@ -9,5 +9,5 @@ def fizzbuzz():
         elif i % 5 == 0:
             print("Buzz", end=" ")
         else:
-            print("{}", end=" ").format(i)  # Fixed the print/format ordering logic
+            print(i, end=" ")
 
