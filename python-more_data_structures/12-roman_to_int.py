@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Module to convert Roman numerals to integers"""
+
 def roman_to_int(roman_string):
     """Converts a roman numeral to an integer"""
     if not isinstance(roman_string, str) or roman_string is None:
@@ -16,4 +17,5 @@ def roman_to_int(roman_string):
             total -= rom_dict[roman_string[i]]
         else:
             total += rom_dict[roman_string[i]]
+
     return total
